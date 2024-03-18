@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMiFY</title>
+  <style>
+     @font-face {
+        font-family: myFont;
+        src: url("assets/fonts/Poppins-ExtraBold.ttf");
+      }
+      @font-face {
+        font-family: myFont2;
+        src: url("assets/fonts/Poppins-Light.ttf");
+      }
+      * {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+#d1
+    {
+      
+      font-family: myFont;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(73, 24, 197);
+      color: white;
+      padding: 15px;
+
+    }
+    .d2{
+     
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+
+    }
+    .d2:hover
+    {
+      color: black;
+      
+    }
+    #d3
+    {
+      padding-top:10px ;
+      padding-bottom: 10px;
+      background-color: orange;
+      border-radius: 10px;
+    }
+    #d4
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(73, 24, 197);
+      color: white;
+      padding-top: 50px;
+    }
+    #d5
+    {
+      font-family: myFont2;
+      margin-left: 100px;
+      font-size: 12px;
+      padding-bottom: 30px;
+    }
+    #d9
+    {
+      color: orange;
+    }
+    #d6
+    {
+      font-family: myFont;
+      padding-bottom: 25px;
+      margin-left: 100px;
+      font-size: 30px;
+    }
+    #d7
+    {
+      font-family: myFont2;
+      font-size: 13px;
+      margin-left: 100px;
+      padding-bottom: 30px;
+    }
+    #d8
+    {
+      background-color: orange;
+      border-radius: 20px;
+      text-decoration: none;
+      font-family: myFont2;
+      padding: 10px;
+      margin-left: 100px;
+      color: white;
+
+    }
+    #d8:hover
+    {
+      color: black;
+    }
+    #d10
+    {
+      background-color: rgb(73, 24, 197);
+      padding-top: 100px;
+      padding-bottom: 50px;
+      
+    }
+    #d11
+    {
+      color: white;
+      margin-left: 100px;
+      font-family: myFont;
+      font-size: 20px;
+    }
+    #d12{
+      background-color:rgb(73, 24, 197) ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-bottom: 200px;
+    }
+    #d13
+    {
+      background-color: black;
+      border-radius: 20px;
+      color: white;
+      padding: 50px;
+    }
+    #d14
+    {
+      font-size: 10px;
+      font-family: myFont2;
+      background-color: rgb(76, 53, 76);
+      display: inline;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #d15
+    {
+      padding-top: 30px;
+      font-family: myFont;
+    }
+    #d17
+    {
+      padding-top: 20px;
+      font-family: myFont2;
+      font-size: 15px;
+    }
+    #d18
+    {
+      background-color: black;
+      border-radius: 20px;
+      color: white;
+      padding: 50px;
+    }
+    #d19
+    {
+      font-size: 10px;
+      font-family: myFont2;
+      background-color: rgba(70, 26, 26, 0.821);
+      display: inline;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #d20
+    {
+      padding-top: 30px;
+      font-family: myFont;
+    }
+    #d21
+    {
+      padding-top: 20px;
+      font-family: myFont2;
+      font-size: 15px;
+    }
+    #d22
+    {
+      background-color: black;
+      border-radius: 20px;
+      color: white;
+      padding: 50px;
+    }
+    #d23
+    {
+      font-size: 10px;
+      font-family: myFont2;
+      background-color: rgba(14, 44, 14, 0.819);
+      display: inline;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #d24
+    {
+      padding-top: 30px;
+      font-family: myFont;
+    }
+    #d25
+    {
+      padding-top: 20px;
+      font-family: myFont2;
+      font-size: 15px;
+    }
+    #d26
+    {
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+    }
+    #d29
+    {
+      padding-top: 100px;
+      color: white;
+    }
+    #d30
+    {
+      font-family: myFont2;
+      padding-bottom: 20px;
+      font-size: 15px;
+    }
+    #d31
+    {
+      font-family: myFont;
+      font-size: 25px;
+      padding-bottom: 20px;
+
+    }
+    #d32
+    {
+      font-family: myFont2;
+      font-size: 15px;
+    }
+    #d28
+    {
+      margin-top: 100px;
+      border-radius: 20px;
+      
+    }
+    #d33
+    {
+      padding-top: 100px;
+    }
+    #d34
+    {
+      background-color:rgb(73, 24, 197) ;
+      padding-top: 150px;
+    }
+    #d35
+    {
+      color: white;
+      font-family: myFont;
+      font-size: 20px;
+      padding-left: 100px;
+      padding-bottom: 50px;
+    }
+    #d37
+    {
+      background-color: black;
+      border-radius: 20px;
+      margin-left: 100px;
+      padding-right: 80px;
+      padding-left: 80px;
+      
+    }
+    #d38
+    {
+      padding-top: 20px;
+      text-align: center;
+    }
+    #d39
+    {
+      color: white;
+      font-family: myFont;
+      font-size: 15px;
+      text-align: center;
+    }
+    #d40
+   {
+    color: white;
+    font-family: myFont2;
+    text-align: center;
+   }
+    #d36
+    {
+      background-color:rgb(73, 24, 197)  ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    #d41
+    {
+      background-color: black;
+      border-radius: 20px;
+      margin-left: 100px;
+      padding-right: 80px;
+      padding-left: 80px;
+      margin-right: 80px;
+      
+    }
+    #d42
+    {
+      background-color: rgb(73, 24, 197);
+      padding-top: 150px;
+      padding-left: 100px;
+      padding-bottom: 200px;
+    }
+    #d43
+    {
+      font-family: myFont;
+      color: white;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    #d44
+    {
+      font-family: myFont2;
+      color: white;
+      font-size: 15px;
+    }
+    #d45
+    {
+      background-color: black;
+      margin-top: 50px;
+      margin-right: 80px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+    }
+    #d46
+    {
+      color: white;
+      font-family: myFont2;
+      font-size: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    #d47
+    {
+       margin-top: 80px;
+       margin-bottom: 80px;
+       padding-left: 40px;
+       padding-right: 130px;
+       border-radius: 20px;
+    }
+    #d48
+    {
+      background-color: orange;
+      color: white;
+      font-family: myFont2;
+      border-radius: 20px;
+      margin-top: 88px;
+       margin-bottom: 85px;
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       position: absolute;
+       margin-left: 950px;
+      
+    }
+    #d48:hover
+    {
+      color: black;
+    }
+    #d49{
+      background-color: black;
+      color: white;
+      padding-top: 80px;
+      
+
+    }
+    #d50
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-right: 130px;
+      list-style-type: none;
+    }
+    #d51
+    {
+      font-family: myFont;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    #d52
+    {
+      font-family: myFont2;
+      padding-bottom: 20px;
+
+    }
+    #d53
+    {
+      font-family: myFont2;
+    }
+    #d54
+    {
+      font-family: myFont2;
+    }
+    #d55
+    {
+      font-family: myFont2;
+      padding-top: 10px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="d1">
+    <h3>LOGO</h3>
+    <div>
+      <a class="d2" href="">Home</a>
+      <a class="d2" href="">Games</a>
+      <a class="d2" href="">About us</a>
+      <a class="d2" href="">News</a>
+      <a class="d2" id="d3" href="">page theme</a>
+    </div>
+  </div>
+  <div id="d4">
+
+    <div id="d33">
+     <pre id="d5">Home  > <span id="d9">Games</span></pre>
+     <h2 id="d6">Lorem Ipsum is simply <br> dummy text of the printing <br>and.</h2>
+     <p id="d7">Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the <br> industry's standard dummy text ever since the 1500s.</p>
+     <a id="d8" href="">Get in touch -></a>
+    </div>
+    <div>
+     <img  width="739" height="656" src="assets/images/6d5e0990a67102e0ba74574d569aa036.jpg" alt="">
+    </div>
+
+  </div>
+   
+   <div id="d10">
+    <p id="d11">Why work with us</p>
+   </div>
+   <div id="d12">
+
+    <div id="d13">
+      <p id="d14">Lorem ispum</p>
+      <h4 id="d15">Lorem Ispum</h4>
+      <p id="d17">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem <br>Ipsum has been the industry's standard <br>dummy text ever since the 1500s,</p>
+    </div>
+
+    <div id="d18">
+      <p id="d19">Lorem ispum</p>
+      <h4 id="d20">Lorem Ispum</h4>
+      <p id="d21">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem <br>Ipsum has been the industry's standard <br>dummy text ever since the 1500s,</p>
+    </div>
+
+    <div id="d22">
+      <p id="d23">Lorem ispum</p>
+      <h4 id="d24">Lorem Ispum</h4>
+      <p id="d25">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem <br>Ipsum has been the industry's standard <br>dummy text ever since the 1500s,</p>
+    </div>
+
+   </div>
+   <div id="d26">
+
+    <div id="d27">
+      <img id="d28" width="496" height="490" src="assets/images/7f371d6e72cd0e323780efd3d18eea57.jpg" alt="">
+    </div>
+    <div id="d29">
+      <p id="d30">Lorem ispum</p>
+      <h3 id="d31">Lorem Ipsum is simply dummy text <br> of the printing and typesetting <br>industry. </h3>
+      <p id="d32">Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy <br> text ever since the 1500s, when an unknown printer took a galley of <br> type and scrambled it to make a type specimen book. It has <br> survived not only five centuries,</p>
+    </div>
+
+   </div>
+   <div id="d34">
+
+    <div id="d35">
+      <p> Our Team </p>
+    </div>
+
+    <div id="d36">
+      <div  id="d37">
+        <img id="d38" width="123" height="123" src="assets/images/99e5aec4dc98a8eeaa37e2809365d346.png" alt="">
+        <p id="d39">your name</p>
+        <p id="d40">coo</p>
+      </div>
+      <div  id="d37">
+        <img id="d38" width="117" height="117" src="assets/images/74b65d724fa7d58310bbb095f7bf8f29.png" alt="">
+        <p id="d39">your name</p>
+        <p id="d40">coo</p>
+      </div>
+      <div  id="d37">
+        <img id="d38" width="109" height="109" src="assets/images/f4876c88c37a1f06ca35d2c50ee5adf1.png" alt="">
+        <p id="d39">your name</p>
+        <p id="d40">coo</p>
+      </div>
+      <div  id="d41">
+        <img id="d38" width="106" height="106" src="assets/images/e32fec9dd7fd74c68aec2b773b1f7868.png" alt="">
+        <p id="d39">your name</p>
+        <p id="d40">coo</p>
+      </div>
+
+      
+    </div>
+   </div>
+   <div id="d42">
+
+    <h3 id="d43">Lorem Ispum</h3>
+    <p id="d44">Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.</p>
+    <div id="d45">
+     
+      <p id="d46">
+        Stay in the loop <br><br>
+        Subscribe to receive the latest news and updates about TDA.
+        <br>We promise not to spam you! 
+        </p>
+        <input id="d47"  type="email" placeholder="Enter email address"  >
+        <button id="d48">continue</button>
+
+    </div>
+
+  </div>
+  <div id="d49">
+    <ul id="d50">
+      <li><h3 id="d51">LOGO</h3>
+        <p id="d52">
+         Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. <br><br><br> 
+         @Logo
+        </p>
+      </li>
+      <li>
+        <p id="d53">
+          About us <br><br>
+          Contact us <br>
+          Portfolio <br>
+          Careers <br>
+          Contact us
+        </p>
+      </li>
+      <li >
+        <p id="d54">
+          Contact us <br><br>
+         
+          Lorem Ipsum is simply dummy text <br> of the printing and typesetting <br> industry. 
+          <br><br>
+          +908 89097 890
+        </p>
+
+      </li>
+    </ul>
+    <hr>
+    <div>
+      <p id="d55"> Copyright ® 2022 your name All rights Rcerved</p>
+    </div>
+  </div>
+
+</body>
+</html>

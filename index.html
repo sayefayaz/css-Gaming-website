@@ -3,10 +3,514 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- description -->
-    <!-- link style -->
-    <!-- favicon -->
     <title>GAMiFY</title>
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url("assets/fonts/Poppins-ExtraBold.ttf");
+      }
+      @font-face {
+        font-family: myFont2;
+        src: url("assets/fonts/Poppins-Light.ttf");
+      }
+      * {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+    
+    #d1
+    {
+      
+      font-family: myFont;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(73, 24, 197);
+      color: white;
+      padding: 15px;
+
+    }
+    .d2{
+     
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+
+    }
+    .d2:hover
+    {
+      color: black;
+      
+    }
+    #d3
+    {
+      padding-top:10px ;
+      padding-bottom: 10px;
+      background-color: orange;
+      border-radius: 10px;
+    }
+    #d4{
+      font-family: myFont;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color:  rgb(73, 24, 197);
+      padding-top: 80px;
+      padding-left: 100px;
+    }
+    #d5{
+      font-size: 30px;
+      font-family: myFont;
+      color: orange;
+      padding-bottom: 20px;
+    }
+    #d6{
+      
+      font-family: myFont;
+      font-size: 30px;
+      color: white;
+      padding-bottom: 20px;
+    }
+    #d7{
+      font-family: myFont2;
+      font-size: 15px;
+      color: white;
+      padding-bottom: 30px;
+    }
+    #d8{
+      color: white;
+      font-family: myFont;
+      text-decoration: none;
+      background-color: orange;
+      border-radius: 30px;
+      padding: 10px;
+    }
+    #d8:hover{
+      color: black;
+    }
+    #d9
+    {
+      color: white;
+      font-family: myFont;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color:rgb(73, 24, 197) ;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 30px;
+      
+
+    }
+    #d10{
+     text-decoration: none;
+     color: white;
+     background-color: rgba(255, 255, 255, 0.615);
+     text-shadow: 2px 2px 5px palevioletred;
+     padding: 15px;
+     border-radius: 10px;
+    }
+    #d10:hover{
+      color: black;
+    }
+    #d11{
+      padding-top: 100px;
+    }
+    #d12
+    {
+      
+    
+      background-color:rgb(73, 24, 197) ;
+      
+      
+
+     
+    }
+    #d13
+    {
+      padding-top: 10px;
+      border-radius: 30px;
+      
+      
+      
+    }
+    #d14
+    {
+      padding-top: 10px;
+      border-radius: 30px;
+    }
+    #d15
+    {
+      padding-top: 10px;
+      border-radius: 30px;
+    }
+    #d16
+    {
+      padding-top: 10px;
+      border-radius: 30px;
+      
+    }
+    #d17
+    {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly;
+      
+    }
+    #d18
+    {
+      background-color: rgb(73, 24, 197);
+      color: white;
+      font-family: myFont;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 80px;
+    }
+    #d19
+    {
+      padding-left: 100px;
+      padding-top: 100px;
+      background-color: rgb(73, 24, 197);
+      color: white;
+
+    }
+    #d20
+    {
+      font-family: myFont;
+      padding-bottom: 30px;
+
+    }
+    #d21
+    {
+      font-family: myFont2;
+
+    }
+    #d22
+    {
+      background-color:rgb(73, 24, 197) ;
+      text-align: center;
+      padding-top: 50px;
+      
+    }
+    #d23
+    {
+      border-radius: 10px;
+    }
+    #d24
+    {
+      background-color: rgb(73, 24, 197);
+      padding-top: 80px;
+      text-align: center;
+    }
+    #d25
+    {
+      font-size: 40px;
+      font-family: myFont;
+      color: white;
+    }
+    #d26
+    {
+      padding-top: 15px;
+      font-family: myFont2;
+      color: white;
+      font-size: 10px;
+    }
+    #d27
+    {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+    }
+    #d28
+    {
+      border-radius: 20px;
+      
+    }
+    #d29
+    {
+      
+      border-radius: 20px;
+    }
+    #d30
+    {
+      border-radius: 20px;
+    }
+    #d31
+    {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-bottom: 50px;
+    }
+    #d32
+    {
+      border-radius: 20px;
+    }
+    #d33
+    {
+      border-radius: 20px;
+    }
+    #d34
+    {
+      border-radius: 20px;
+    }
+    #d35
+    {
+      
+      font-family: myFont;
+      color: white;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.651);
+      text-shadow: 2px 2px 5px palevioletred;
+      padding: 15px;
+      border-radius: 15px;
+    }
+    #d35:hover
+    {
+      color: black;
+    }
+    #d36
+    {
+      background-color: rgb(73, 24, 197);
+      padding-top: 150px;
+      padding-left: 100px;
+      padding-bottom: 200px;
+    }
+    #d37
+    {
+      color: white;
+      font-family: myFont;
+      font-size: 30px;
+    }
+    #d38
+    {
+      padding-top: 20px;
+      color: white;
+      font-family: myFont2;
+      padding-bottom: 70px;
+
+    }
+    #d39
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: black;
+      padding: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-right: 100px;
+      border-radius: 30px;
+      
+    
+    }
+    #d40
+    {
+      color: white;
+      font-family: myFont;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    #d41
+    {
+      color: white;
+      font-family: myFont2;
+      
+    }
+    #d42
+    {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 50px;
+      color: gray;
+      border-radius: 20px;
+      padding-right: 100px;
+      margin-top: 50px;
+      
+    }
+    #d43
+    {
+    
+      color: white;
+      background-color: orange;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top:50px ;
+      position: absolute;
+      margin-left: 1200px;
+      margin-top: 60px;
+      
+
+    }
+    #d43:hover
+    {
+      color: black;
+    }
+    #d44
+    {
+    
+      background-color:black ;
+      color: white;
+    }
+    #d45
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      list-style-type: none;
+    }
+    #d46
+    {
+      font-family: myFont;
+    }
+    #d47
+    {
+      font-family: myFont2;
+    }
+    #d48
+    {
+      font-family: myFont2;
+    }
+    #d49
+    {
+      font-family: myFont2;
+    }
+    #d50
+    {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: myFont2;
+    }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="d1">
+      <h3>LOGO</h3>
+      <div>
+        <a class="d2" href="">Home</a>
+        <a class="d2" href="">Games</a>
+        <a class="d2" href="">About us</a>
+        <a class="d2" href="">News</a>
+        <a class="d2" id="d3" href="">page theme</a>
+      </div>
+    </div>
+
+    <div id="d4">
+      <div id="d11">
+        <h4 id="d5">Proved By Your Name</h4>
+      <h3 id="d6">Work that we <br>produce for our <br>clients</h3>
+      <p id="d7">Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the industry's <br> standard.</p>
+      <a id="d8" href="">Get more details</a>
+      </div>
+      <img width="806px" height="761" src="assets\images\4aed1bc4524c8c056b1d97bb57a48953.png" alt="not found">
+    </div>
+    <div id="d9">
+      <h3>Currently Trending Games</h3>
+      <div>
+        <a id="d10"href="">SEE ALL</a>
+      </div>
+    </div>
+    <div id="d12">
+      <ul id="d17">
+        <li><img id="d13" width="252" height="277" src="assets/images/56905d8aead565a99461edee86e24d27.jpg" alt=""></li>
+        <li><img id="d14" width="252" height="277" src="assets/images/2632d80603fc629f3a90af2f71e77160.jpg" alt=""></li>
+        <li><img id="d15" width="252" height="277" src="assets/images/067aa0e4760746af800ca04d242d4981.jpg" alt=""></li>
+        <li><img id="d16" width="252" height="277" src="assets/images/6d5e0990a67102e0ba74574d569aa036.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div id="d18">
+
+      <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+
+    </div>
+
+    <div id="d19">
+
+     <h2 id="d20">Lorem Ipsum</h2>
+     <p id="d21">Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s,</p>
+
+    </div>
+    <div id="d22">
+      
+      <img id="d23" width="1146" height="462" src="assets/images/bda8f371503fa58f7e526fe7b0cd55c9.jpg" alt="">
+
+    </div>
+    <div id="d24">
+      <h3 id="d25">Our Recent Projects</h3>
+      <p id="d26">Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.</p>
+      <div id="d27">
+        <img id="d28" width="382" height="223" src="assets/images/40fa4d142038d6aa657990166938303b.jpg" alt="">
+        <img id="d29" width="382" height="223" src="assets/images/76b637b3463839823573a4699778d253.jpg" alt="">
+        <img id="d30" width="382" height="223" src="assets/images/27147fc9069e5aaedca141cbd5e38fb5.jpg" alt="">
+      </div>
+      <div id="d31">
+        <img id="d32" width="246" height="223" src="assets/images/f7bdd68c0eb8ca0424ee5d0a2cd50047.jpg" alt="">
+        <img id="d33" width="401" height="223" src="assets/images/cae447fd034995078024fd4508542d72.jpg" alt="">
+        <img id="d34" width="469" height="223" src="assets/images/c4c2ab1004f3dae4b260f6854e1d879c.jpg" alt="">
+    </div>
+    <a id="d35" href="">SEE ALL</a>
+    </div>
+    <div id="d36">
+      <h3 id="d37">Lorem Ispum</h3>
+      <p id="d38">Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.</p>
+      <div id="d39">
+       
+        <p id="d41">
+          Stay in the loop <br><br>
+          Subscribe to receive the latest news and updates about TDA.
+          <br>We promise not to spam you! 
+          </p>
+          <input id="d42"  type="email" placeholder="Enter email address"  >
+          <button id="d43">continue</button>
+
+      </div>
+
+    </div>
+    <div id="d44">
+      <ul id="d45">
+        <li><h3 id="d46">LOGO</h3>
+          <p id="d47">
+           Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. <br><br><br> 
+           @Logo
+          </p>
+        </li>
+        <li>
+          <p id="d48">
+            About us <br><br>
+            Contact us <br>
+            Portfolio <br>
+            Careers <br>
+            Contact us
+          </p>
+        </li>
+        <li >
+          <p id="d49">
+            Contact us <br><br>
+           
+            Lorem Ipsum is simply dummy text <br> of the printing and typesetting <br> industry. 
+            <br><br>
+            +908 89097 890
+          </p>
+
+        </li>
+      </ul>
+      <hr>
+      <div>
+        <p id="d50"> Copyright ® 2022 your name All rights Rcerved</p>
+      </div>
+    </div>
+    
+  </body>
+  
 </html>
